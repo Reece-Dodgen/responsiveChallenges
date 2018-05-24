@@ -1,0 +1,80 @@
+/*adding a grid to the body*/
+body{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px;
+  color: white;
+
+}
+/*adding header*/
+header{
+  display: grid;
+  grid-column: 1/4;
+  background-color: green;
+
+}
+/*adding nav*/
+nav{
+  display: grid;
+  grid-column: 1/2;
+  background-color: green;
+
+}
+/*adding section*/
+section{
+  display: grid;
+  grid-column: 2/4;
+  background-color: green;
+}
+/*article*/
+article{
+  background-color: green;
+}
+
+footer{
+  display: grid;
+  grid-column: 1/4;
+  background-color: green;
+
+}
+
+/*.header {
+grid-area: header;
+}
+.footer {
+grid-area: footer;
+}
+.article {
+grid-area: article;
+}
+.nav {
+grid-area: nav;
+}
+.section{
+  grid-area: section;
+}
+.siteAds {
+grid-area: ads;
+}*/
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 360px) {
+  header, footer, article, section, nav { background-color: red; }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header, footer, article, section, nav{ background-color: blue; }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header, footer, article, section, nav{ background-color: orange; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  header, footer, article, section, nav{ background-color: green; }
+}
